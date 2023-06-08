@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poplins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 90px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    border: solid red;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 110px;
+    height: 90px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    border: solid white;
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: rgb(230, 6, 43);
+
+}
+
+#home {
+    margin-right: 30px;
+}
+
+#about {
+    margin-right: 30px;
+}
+
+#contact {
+    margin-right: 30px;
+}
+
+#skill {
+    margin-right: 30px;
+
+}
+
+.header-text {
+    margin-top: 100px;
+}
+
+.header-text p {
+    text-decoration: none;
+}
+
+.header-text h1 {
+    margin-top: 20px;
+    animation: text 15s;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px;
+    border-color: brown;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 75ch;
+    }
+}
+
+.header-text h1 span {
+    color: brown;
+}
+
+.hire {
+    padding: 10px;
+    width: 100px;
+    margin-top: 50px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    border: solid white;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+}
+
+.hire:hover {
+    transform: translateY(-5px);
+    background-color: rgb(230, 6, 43);
+}
+
+/* About Section */
+#About {
+    padding: 80px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 35%;
+}
+
+.row img {
+    border-radius: 100px;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.col-1 img:hover {
+    transform: translateX(-10px);
+    background-color: brown;
+
+}
+
+.col-2 {
+    flex-basis: 55%;
+}
+
+.tittle {
+    color: white;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-shadow: 10%;
+}
+
+.description {
+    font-size: small;
+    color: white;
+}
+
+.tab-tittle {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: brown;
+    transition: 0.5s;
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none;
+}
+
+.tab-content ul li {
+    margin: 10px 0;
+    font-size: 10px;
+    list-style: none;
+
+}
+
+.tab-content ul li span {
+    color: brown;
+    font-size: 15px;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* Contact Us */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.sub-title {
+    text-decoration: underline;
+    text-decoration-color: brown;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contact-left p i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: brown;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    color: brown;
+    font-size: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.contact-right {
+    flex-basis: 55%;
+    width: 100%;
+}
+
+.btn {
+    background-color: black;
+    border: solid white;
+    border-radius: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: rgb(230, 6, 43);
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+form button {
+    color: white;
+    background-color: black;
+    width: 100px;
+    border: solid white;
+    border-radius: 2rem;
+    padding: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+    background-color: rgb(230, 6, 43);
+
+}
+
+.footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer p {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.footer i {
+    font-size: 15px;
+}
+
+/* CSS for small screen */
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(image/mob-bg-img.png);
+    }
+
+    .header-text {
+        margin-top: 90%;
+        font-size: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 30px;
+    }
+
+    nav ul {
+        padding: 10px;
+        top: 0;
+        right: -200px;
+        position: fixed;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        background-color: brown;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .cantact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .col-1,
+    .col-2 {
+        flex-basis: 100%;
+    }
+
+    .tittle {
+        font-size: 20px;
+    }
+
+    .col-2 {
+        margin-top: 10px;
+        font-size: 5px;
+    }
+
+    .tab-link {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+}
+
+#msg {
+    color: brown;
+    margin-top: 5px;
+    display: block;
+}
