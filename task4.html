@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header" id="home">Home</a>
+                        <a href="#About" id="about">About</a>
+                        <a href="#contact" id="contact">Contact</a>
+                        <a href="#About" id="skill">Skill</a>
+                        <a href="#About" id="education">Education</a>
+                    </li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer.</p>
+                <h1>Hi...! I'm <span>pankaj kumar,</span><br> A Computer Science Engineering Student at <br>
+                    <span>aryabhatta knowledge university</span> Patna
+                </h1>
+                <a href="https://www.linkedin.com/in/somdatt-kumar-125301173/"><button class="hire">Hire Me</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="image/about.png" alt="aboutImg">
+                </div>
+                <div class="col-2">
+                    <h1 class="tittle">About Me</h1>
+                    <p class="description">Hi....!! I'm pankaj kumar, a Computer Science Student of 2nd Year. I'm a
+                        creative minded student and interested to learn new technologies day by day. I'm a learner of
+                        C/C++ programming language. Currently I'm looking for a good IT company as a intern and learn
+                        new Technologies. My future aim is to get placed in Product based MNC's or any other IT
+                        companies. Definitely I will give my 100% effort .</p>
+
+                    <div class="tab-tittle">
+                        <p class="tab-link active-link" onclick="opentab('skill')">Skill</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX:</span><br>Desining Web Interface.</li>
+                            <li><span>Web Development:</span><br>Just Front End.</li>
+                            <li><span>Problem Solver:</span><br>Knowlwdge of Data Structure & Algo with C/C++
+                                programming language.</li>
+                            <li><span>Programming Language:</span><br>C/C++, Java, HTML, CSS, Javascript ...
+                                <br>Intermediate in C/C++, HTML, CSS, & Basic in Java, Javascript.</li>
+                            <li><span>Knowlwdge of core Subject:</span><br>OS, DBMS, DAA, COA, DCN.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Gowox Infotech:</span><br>Completed Internship in Web Development & Database
+                                Management.</li>
+                            <li><span>Sales & Marketing:</span><br>One year experience of Trade Business.</li>
+                            <li><span>TXON:</span><br>Currently Working as an Intern at TXON.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>B.Tech:</span><br>Pursuing B.Tech in Computer Science Engineering at Aaryabhatta knowledge university</li>
+                            <li><span>Diploma:</span><br>I completed three years diploma in CSE from GP-Muzaffarpur,
+                                Bihar. <br>During diploma I have Secured 2nd rank in top-3.</li>
+                            <li><span>Matriculation:</span><br>I have done 10th from BSEB patna.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>somdatt2031@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6380179781</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/somdatt-kumar-125301173/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SOMDATT2031/txon_04"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UC8N_Eir1syc-E1vSy1uocGQ"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="image/MyCV.pdf" download><button class="btn btn2">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Write Your Name here..." required>
+                        <input type="email" name="email" placeholder="Write Your Email here..." required>
+                        <input type="text" name="phone" placeholder="Write Your Mobile No...." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message."></textarea>
+                        <button type="submit" class="bttn bttn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><i class="fa-regular fa-copyright"></i> Copyright 2k22. <br>Made by @Somdatt </p>
+            <div class="fooetr-right">
+                <p>ThankYou...!!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
